@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty | Namal University</title>
+    <meta name="description" content="Meet the experienced faculty members at Namal University Mianwali - Dedicated educators and researchers in Computer Science, Electrical Engineering, Business Studies, and Mathematics.">
+    <link rel="icon" href="https://namal.edu.pk/uploads/logo22869383.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .inner-page-header { background: linear-gradient(135deg, var(--secondary) 0%, #16213e 100%); padding: 80px 0 40px; position: relative; }
+        .inner-page-header::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('https://namal.edu.pk/assets/img/slider5.jpg') center/cover no-repeat; opacity: 0.25; }
+        .inner-page-header .container { position: relative; z-index: 2; }
+        .page-title { color: #fff; font-size: 2.5rem; font-weight: 700; margin-bottom: 10px; }
+        .breadcrumb { display: flex; gap: 10px; color: rgba(255,255,255,0.7); }
+        .breadcrumb a { color: var(--primary); text-decoration: none; }
+        .department-tabs { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; justify-content: center; }
+        .department-tabs button { background: #fff; border: 2px solid #e0e0e0; padding: 12px 25px; border-radius: 30px; font-weight: 600; color: var(--secondary); cursor: pointer; transition: all 0.3s ease; }
+        .department-tabs button:hover, .department-tabs button.active { background: var(--primary); border-color: var(--primary); color: var(--secondary); }
+        .faculty-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 25px; }
+        .faculty-card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: all 0.3s ease; }
+        .faculty-card:hover { transform: translateY(-5px); box-shadow: 0 15px 40px rgba(0,0,0,0.12); }
+        .faculty-card .faculty-img { width: 100%; height: 280px; object-fit: cover; }
+        .faculty-card .card-body { padding: 25px; }
+        .faculty-card h4 { color: var(--secondary); font-size: 1.2rem; margin-bottom: 5px; }
+        .faculty-card .designation { color: var(--primary); font-weight: 600; font-size: 0.9rem; margin-bottom: 8px; }
+        .faculty-card .department { color: #666; font-size: 0.85rem; margin-bottom: 8px; }
+        .faculty-card .education { color: #888; font-size: 0.8rem; line-height: 1.6; }
+        .department-section { display: none; }
+        .department-section.active { display: block; }
+        @media (max-width: 1200px) { .faculty-grid { grid-template-columns: repeat(3, 1fr); } }
+        @media (max-width: 992px) { .faculty-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 576px) { .faculty-grid { grid-template-columns: 1fr; } .department-tabs { justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 10px; } .department-tabs button { white-space: nowrap; } }
+    </style>
+</head>
+<body>
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="homepage.html" class="logo">
+                    <img src="https://namal.edu.pk/uploads/logo22869383.png" alt="Namal University">
+                    <span class="logo-text">Namal <span>University</span></span>
+                </a>
+                
+                <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+                
+                <ul class="nav-menu">
+                    <li><a href="homepage.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">About <i class="fas fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="chairman_message.html">Chairman's Message</a></li>
+                            <li><a href="vision_and_mission.html">Vision & Mission</a></li>
+                            <li><a href="core_values.html">Core Values</a></li>
+                            <li><a href="the_namal_story.html">The Namal Story</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Academics <i class="fas fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="department_of_computer_science.html">Computer Science</a></li>
+                            <li><a href="department_of_computer_electrical_engineering.html">Electrical Engineering</a></li>
+                            <li><a href="department_of_computer_electrical_business_studies.html">Business Studies</a></li>
+                            <li><a href="department_of_computer_electrical_maths.html">Mathematics</a></li>
+                            <li><a href="academic_calender.html">Academic Calendar</a></li>
+                            <li><a href="faculty.html">Faculty</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="admission.html" class="btn-cta">ADMISSIONS 2026</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Inner Page Header -->
+    <section class="inner-page-header">
+        <div class="container">
+            <h1 class="page-title">Faculty</h1>
+            <div class="breadcrumb">
+                <a href="homepage.html">Home</a>
+                <span>/</span>
+                <span>Faculty</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title" style="text-align: center; margin-bottom: 40px;">
+                <h2>Meet Our Faculty</h2>
+                <p>Dedicated educators and researchers committed to excellence</p>
+            </div>
+
+            <!-- Department Tabs -->
+            <div class="department-tabs">
+                <button class="active" onclick="showDepartment('cs')">Computer Science</button>
+                <button onclick="showDepartment('ee')">Electrical Engineering</button>
+                <button onclick="showDepartment('bs')">Business Studies</button>
+                <button onclick="showDepartment('math')">Mathematics</button>
+            </div>
+
+            <!-- Computer Science Department -->
+            <div id="cs" class="department-section active">
+                <div class="faculty-grid">
+                    <div class="faculty-card">
+                        <img src="https://namal.edu.pk/uploads/facultyImg/facultyImg_1577251.jpg" alt="Dr. Malik M Ali Shahid" class="faculty-img">
+                        <div class="card-body">
+                            <h4>Dr. Malik M Ali Shahid</h4>
+                            <div class="designation">Associate Professor & HoD</div>
+                            <div class="department">Department of Computer Science</div>
+                            <div class="education">PhD Computer Science<br>MSc Computer Science</div>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="https://namal.edu.pk/uploads/facultyImg/facultyImg_8300864.jpg" alt="Dr. Khawar Khurshid" class="faculty-img">
+                        <div class="card-body">
+                            <h4>Dr. Khawar Khurshid</h4>
+                            <div class="designation">Associate Professor</div>
+                            <div class="department">Department of Computer Science</div>
+                            <div class="education">PhD Computer Science<br>MSc Computer Science</div>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="https://namal.edu.pk/uploads/facultyImg/facultyImg_1577251.jpg" alt="Dr. Mudassar Raza" class="faculty-img">
+                        <div class="card-body">
+                            <h4>Dr. Mudassar Raza</h4>
+                            <div class="designation">Assistant Professor</div>
+                            <div class="department">Department of Computer Science</div>
+                            <div class="education">PhD Computer Science<br>MSc Computer Science</div>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="https://namal.edu.pk/uploads/facultyImg/facultyImg_8300864.jpg" alt="Dr. Shafiq Ur Rehman Khan" class="faculty-img">
+                        <div class="card-body">
+                            <h4>Dr. Shafiq Ur Rehman Khan</h4>
+                            <div class="designation">Assistant Professor</div>
+                            <div class="department">Department of Computer Science</div>
+                            <div class="education">PhD Computer Science<br>MSc Computer Science</div>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="https://namal.edu.pk/uploads/facultyImg/facultyImg_1577251.jpg" alt="Dr. Muzamil Ahmed" class="faculty-img">
+                        <div class="card-body">
+                            <h4>Dr. Muzamil Ahmed</h4>
+                            <div class="designation">Lecturer</div>
+                            <div class="department">Department of Computer Science</div>
+                            <div class="education">MSc Computer Science<br>BSc Computer Science</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Electrical Engineering Department -->
+            <div id="ee" class="department-section">
+                <div class="faculty-grid">
+                    <div class="faculty-card">
+                        <img src="https://namal.edu.pk/uploads/facultyImg/facultyImg_1577251.jpg" alt="Dr. Sami ud Din" class="faculty-img">
+                        <div class="card-body">
+                            <h4>Dr. Sami ud Din</h4>
+                            <div class="designation">Professor & HoD</div>
+                            <div class="department">Department of Electrical Engineering</div>
+                            <div class="education">PhD Electrical Engineering<br>MSc Electrical Engineering</div>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="https://namal.edu.pk/uploads/facultyImg/facultyImg_8300864.jpg" alt="Dr. Tassadaq Hussain" class="faculty-img">
+                        <div class="card-body">
+                            <h4>Dr. Tassadaq Hussain</h4>
+                            <div class="designation">Associate Professor</div>
+                            <div class="department">Department of Electrical Engineering</div>
+                            <div class="education">PhD Electrical Engineering<br>MSc Electrical Engineering</div>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="https://namal.edu.pk/uploads/facultyImg/facultyImg_1577251.jpg" alt="Dr. Wahab Ali Shah" class="faculty-img">
+                        <div class="card-body">
+                            <h4>Dr. Wahab Ali Shah</h4>
+                            <div class="designation">Assistant Professor</div>
+                            <div class="department">Department of Electrical Engineering</div>
+                            <div class="education">PhD Electrical Engineering<br>MSc Electrical Engineering</div>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="https://namal.edu.pk/uploads/facultyImg/facultyImg_8300864.jpg" alt="Dr. Ahmed Salim" class="faculty-img">
+                        <div class="card-body">
+                            <h4>Dr. Ahmed Salim</h4>
+                            <div class="designation">Assistant Professor</div>
+                            <div class="department">Department of Electrical Engineering</div>
+                            <div class="education">PhD Electrical Engineering<br>MSc Electrical Engineering</div>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="https://namal.edu.pk/uploads/facultyImg/facultyImg_1577251.jpg" alt="Dr. Naureen Shaukat" class="faculty-img">
+                        <div class="card-body">
+                            <h4>Dr. Naureen Shaukat</h4>
+                            <div class="designation">Lecturer</div>
+                            <div class="department">Department of Electrical Engineering</div>
+                            <div class="education">MSc Electrical Engineering<br>BSc Electrical Engineering</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Studies Department -->
+            <div id="bs" class="department-section">
+                <div class="faculty-grid">
+                    <div class="faculty-card">
+                        <img src="https://namal.edu.pk/uploads/facultyImg/facultyImg_1577251.jpg" alt="Dr. Muhammad Ahmed" class="faculty-img">
+                        <div class="card-body">
+                            <h4>Dr. Muhammad Ahmed</h4>
+                            <div class="designation">Associate Professor & HoD</div>
+                            <div class="department">Department of Business Studies</div>
+                            <div class="education">PhD Business Administration<br>MBA</div>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="https://namal.edu.pk/uploads/facultyImg/facultyImg_8300864.jpg" alt="Dr. Muhammad Ashraf" class="faculty-img">
+                        <div class="card-body">
+                            <h4>Dr. Muhammad Ashraf</h4>
+                            <div class="designation">Associate Professor</div>
+                            <div class="department">Department of Business Studies</div>
+                            <div class="education">PhD Business Administration<br>MBA</div>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="https://namal.edu.pk/uploads/facultyImg/facultyImg_1577251.jpg" alt="Dr. Umar Farooq" class="faculty-img">
+                        <div class="card-body">
+                            <h4>Dr. Umar Farooq</h4>
+                            <div class="designation">Assistant Professor</div>
+                            <div class="department">Department of Business Studies</div>
+                            <div class="education">PhD Business Administration<br>MBA</div>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="https://namal.edu.pk/uploads/facultyImg/facultyImg_8300864.jpg" alt="Dr. Hashim Zameer" class="faculty-img">
+                        <div class="card-body">
+                            <h4>Dr. Hashim Zameer</h4>
+                            <div class="designation">Assistant Professor</div>
+                            <div class="department">Department of Business Studies</div>
+                            <div class="education">PhD Business Administration<br>MSc Management Sciences</div>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="https://namal.edu.pk/uploads/facultyImg/facultyImg_1577251.jpg" alt="Dr. Shoaib Irshad" class="faculty-img">
+                        <div class="card-body">
+                            <h4>Dr. Shoaib Irshad</h4>
+                            <div class="designation">Lecturer</div>
+                            <div class="department">Department of Business Studies</div>
+                            <div class="education">MSc Business Administration<br>BBA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mathematics Department -->
+            <div id="math" class="department-section">
+                <div class="faculty-grid">
+                    <div class="faculty-card">
+                        <img src="https://namal.edu.pk/uploads/facultyImg/facultyImg_1577251.jpg" alt="Dr. Rashid Mahmood" class="faculty-img">
+                        <div class="card-body">
+                            <h4>Dr. Rashid Mahmood</h4>
+                            <div class="designation">Associate Professor & HoD</div>
+                            <div class="department">Department of Mathematics</div>
+                            <div class="education">PhD Mathematics<br>MSc Mathematics</div>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="https://namal.edu.pk/uploads/facultyImg/facultyImg_8300864.jpg" alt="Dr. Muhammad Rafiq" class="faculty-img">
+                        <div class="card-body">
+                            <h4>Dr. Muhammad Rafiq</h4>
+                            <div class="designation">Associate Professor</div>
+                            <div class="department">Department of Mathematics</div>
+                            <div class="education">PhD Mathematics<br>MSc Mathematics</div>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="https://namal.edu.pk/uploads/facultyImg/facultyImg_1577251.jpg" alt="Dr. Sami Ullah Khan" class="faculty-img">
+                        <div class="card-body">
+                            <h4>Dr. Sami Ullah Khan</h4>
+                            <div class="designation">Assistant Professor</div>
+                            <div class="department">Department of Mathematics</div>
+                            <div class="education">PhD Mathematics<br>MSc Mathematics</div>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="https://namal.edu.pk/uploads/facultyImg/facultyImg_8300864.jpg" alt="Dr. Awais Shaukat" class="faculty-img">
+                        <div class="card-body">
+                            <h4>Dr. Awais Shaukat</h4>
+                            <div class="designation">Lecturer</div>
+                            <div class="department">Department of Mathematics</div>
+                            <div class="education">MSc Mathematics<br>BSc Mathematics</div>
+                        </div>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="https://namal.edu.pk/uploads/facultyImg/facultyImg_1577251.jpg" alt="Dr. Samia Bibi" class="faculty-img">
+                        <div class="card-body">
+                            <h4>Dr. Samia Bibi</h4>
+                            <div class="designation">Lecturer</div>
+                            <div class="department">Department of Mathematics</div>
+                            <div class="education">MSc Mathematics<br>BSc Mathematics</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="logo-text">Namal <span>University</span></div>
+                    <p>Namal University is committed to providing quality education that transforms students into innovative professionals and responsible citizens.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="academic_calender.html">Academic Calendar</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Departments</h4>
+                    <ul class="footer-links">
+                        <li><a href="department_of_computer_science.html">Computer Science</a></li>
+                        <li><a href="department_of_computer_electrical_engineering.html">Electrical Engineering</a></li>
+                        <li><a href="department_of_computer_electrical_business_studies.html">Business Studies</a></li>
+                        <li><a href="department_of_computer_electrical_maths.html">Mathematics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 30 km Talagang Road, Mianwali</li>
+                        <li><i class="fas fa-phone-alt"></i> +92(0)459-236995</li>
+                        <li><i class="fas fa-envelope"></i> info@namal.edu.pk</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Namal University. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function showDepartment(dept) {
+            document.querySelectorAll('.department-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.querySelectorAll('.department-tabs button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById(dept).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

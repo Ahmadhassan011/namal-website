@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Calendar | Namal University</title>
+    <meta name="description" content="Academic calendar for Namal University Mianwali - View important dates, holidays, and examination schedules.">
+    <link rel="icon" href="https://namal.edu.pk/uploads/logo22869383.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .inner-page-header { background: linear-gradient(135deg, var(--secondary) 0%, #16213e 100%); padding: 80px 0 40px; position: relative; }
+        .inner-page-header::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('https://namal.edu.pk/assets/img/slider5.jpg') center/cover no-repeat; opacity: 0.25; }
+        .inner-page-header .container { position: relative; z-index: 2; }
+        .page-title { color: #fff; font-size: 2.5rem; font-weight: 700; margin-bottom: 10px; }
+        .breadcrumb { display: flex; gap: 10px; color: rgba(255,255,255,0.7); }
+        .breadcrumb a { color: var(--primary); text-decoration: none; }
+        .content-card { background: #fff; border-radius: 16px; padding: 40px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); margin-bottom: 30px; }
+        .content-card h2 { color: var(--secondary); font-size: 1.8rem; margin-bottom: 20px; }
+        .content-card h3 { color: var(--secondary); font-size: 1.4rem; margin: 25px 0 15px; }
+        .content-card p { color: #555; line-height: 1.8; margin-bottom: 15px; }
+        .calendar-grid { display: grid; gap: 30px; }
+        .semester-card { background: #fff; border-radius: 16px; padding: 30px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+        .semester-card h3 { color: var(--secondary); font-size: 1.3rem; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid var(--primary); }
+        .calendar-table { width: 100%; border-collapse: collapse; }
+        .calendar-table th, .calendar-table td { padding: 12px 15px; border: 1px solid #e0e0e0; text-align: left; }
+        .calendar-table th { background: var(--secondary); color: #fff; font-weight: 600; }
+        .calendar-table tr:nth-child(even) { background: #f8f9fa; }
+        .calendar-table tr:hover { background: #fff8e6; }
+        .event-tag { display: inline-block; padding: 3px 10px; border-radius: 15px; font-size: 0.75rem; font-weight: 600; margin-right: 8px; }
+        .event-tag.spring { background: #4caf50; color: #fff; }
+        .event-tag.summer { background: #ff9800; color: #fff; }
+        .event-tag.fall { background: #2196f3; color: #fff; }
+        .event-tag.exam { background: #f44336; color: #fff; }
+        .event-tag.holiday { background: #9c27b0; color: #fff; }
+    </style>
+</head>
+<body>
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="homepage.html" class="logo">
+                    <img src="https://namal.edu.pk/uploads/logo22869383.png" alt="Namal University">
+                    <span class="logo-text">Namal <span>University</span></span>
+                </a>
+                <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+                <ul class="nav-menu">
+                    <li><a href="homepage.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">About <i class="fas fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="chairman_message.html">Chairman's Message</a></li>
+                            <li><a href="vision_and_mission.html">Vision & Mission</a></li>
+                            <li><a href="core_values.html">Core Values</a></li>
+                            <li><a href="the_namal_story.html">The Namal Story</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Academics <i class="fas fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="department_of_computer_science.html">Computer Science</a></li>
+                            <li><a href="department_of_computer_electrical_engineering.html">Electrical Engineering</a></li>
+                            <li><a href="department_of_computer_electrical_business_studies.html">Business Studies</a></li>
+                            <li><a href="department_of_computer_electrical_maths.html">Mathematics</a></li>
+                            <li><a href="academic_calender.html">Academic Calendar</a></li>
+                            <li><a href="faculty.html">Faculty</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="admission.html" class="btn-cta">ADMISSIONS 2026</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Inner Page Header -->
+    <section class="inner-page-header">
+        <div class="container">
+            <h1 class="page-title">Academic Calendar</h1>
+            <div class="breadcrumb">
+                <a href="homepage.html">Home</a>
+                <span>/</span>
+                <span>Academic Calendar</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <div class="content-card">
+                <h2>Academic Calendar 2026</h2>
+                <p>Important dates and events for the academic year 2026 at Namal University.</p>
+                
+                <h3>Spring Semester 2026</h3>
+                <table class="calendar-table">
+                    <tr>
+                        <th>Event</th>
+                        <th>Date</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td><span class="event-tag spring">Semester</span>Classes Begin</td>
+                        <td>January 15, 2026</td>
+                        <td>Spring semester classes commence</td>
+                    </tr>
+                    <tr>
+                        <td><span class="event-tag holiday">Holiday</span>Mid-Semester Break</td>
+                        <td>March 1-7, 2026</td>
+                        <td>Mid-semester vacation</td>
+                    </tr>
+                    <tr>
+                        <td><span class="event-tag exam">Exam</span>Mid-Term Examinations</td>
+                        <td>March 10-15, 2026</td>
+                        <td>Mid-term exam week</td>
+                    </tr>
+                    <tr>
+                        <td><span class="event-tag spring">Semester</span>Classes End</td>
+                        <td>May 15, 2026</td>
+                        <td>Last day of spring classes</td>
+                    </tr>
+                    <tr>
+                        <td><span class="event-tag exam">Exam</span>Final Examinations</td>
+                        <td>May 18-30, 2026</td>
+                        <td>Final exam period</td>
+                    </tr>
+                </table>
+
+                <h3>Summer Semester 2026</h3>
+                <table class="calendar-table">
+                    <tr>
+                        <th>Event</th>
+                        <th>Date</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td><span class="event-tag summer">Semester</span>Classes Begin</td>
+                        <td>June 15, 2026</td>
+                        <td>Summer semester classes commence</td>
+                    </tr>
+                    <tr>
+                        <td><span class="event-tag summer">Semester</span>Classes End</td>
+                        <td>August 15, 2026</td>
+                        <td>Last day of summer classes</td>
+                    </tr>
+                </table>
+
+                <h3>Fall Semester 2026</h3>
+                <table class="calendar-table">
+                    <tr>
+                        <th>Event</th>
+                        <th>Date</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td><span class="event-tag fall">Semester</span>Classes Begin</td>
+                        <td>September 1, 2026</td>
+                        <td>Fall semester classes commence</td>
+                    </tr>
+                    <tr>
+                        <td><span class="event-tag holiday">Holiday</span>Eid Milad-un-Nabi</td>
+                        <td>September 2026</td>
+                        <td>Holiday (tentative)</td>
+                    </tr>
+                    <tr>
+                        <td><span class="event-tag exam">Exam</span>Mid-Term Examinations</td>
+                        <td>October 20-25, 2026</td>
+                        <td>Mid-term exam week</td>
+                    </tr>
+                    <tr>
+                        <td><span class="event-tag fall">Semester</span>Classes End</td>
+                        <td>December 15, 2026</td>
+                        <td>Last day of fall classes</td>
+                    </tr>
+                    <tr>
+                        <td><span class="event-tag exam">Exam</span>Final Examinations</td>
+                        <td>December 18-30, 2026</td>
+                        <td>Final exam period</td>
+                    </tr>
+                </table>
+
+                <h3>Important Holidays 2026</h3>
+                <ul>
+                    <li><strong>New Year's Day:</strong> January 1</li>
+                    <li><strong>Pakistan Day:</strong> March 23</li>
+                    <li><strong>Labor Day:</strong> May 1</li>
+                    <li><strong>Independence Day:</strong> August 14</li>
+                    <li><strong>Eid-ul-Fitr:</strong> Tentative - March 2026</li>
+                    <li><strong>Eid-ul-Azha:</strong> Tentative - June 2026</li>
+                    <li><strong>Defence Day:</strong> September 6</li>
+                    <li><strong>Christmas Day:</strong> December 25</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="logo-text">Namal <span>University</span></div>
+                    <p>Namal University is committed to providing quality education that transforms students into innovative professionals and responsible citizens.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="academic_calender.html">Academic Calendar</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Departments</h4>
+                    <ul class="footer-links">
+                        <li><a href="department_of_computer_science.html">Computer Science</a></li>
+                        <li><a href="department_of_computer_electrical_engineering.html">Electrical Engineering</a></li>
+                        <li><a href="department_of_computer_electrical_business_studies.html">Business Studies</a></li>
+                        <li><a href="department_of_computer_electrical_maths.html">Mathematics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 30 km Talagang Road, Mianwali</li>
+                        <li><i class="fas fa-phone-alt"></i> +92(0)459-236995</li>
+                        <li><i class="fas fa-envelope"></i> info@namal.edu.pk</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Namal University. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

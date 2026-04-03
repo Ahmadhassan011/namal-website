@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News | Namal University</title>
+    <meta name="description" content="Latest news and updates from Namal University Mianwali - A leading Pakistani institution offering innovative undergraduate programs.">
+    <link rel="icon" href="https://namal.edu.pk/uploads/logo22869383.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .inner-page-header { background: linear-gradient(135deg, var(--secondary) 0%, #16213e 100%); padding: 80px 0 40px; position: relative; }
+        .inner-page-header::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('https://namal.edu.pk/assets/img/slider5.jpg') center/cover no-repeat; opacity: 0.25; }
+        .inner-page-header .container { position: relative; z-index: 2; }
+        .page-title { color: #fff; font-size: 2.5rem; font-weight: 700; margin-bottom: 10px; }
+        .breadcrumb { display: flex; gap: 10px; color: rgba(255,255,255,0.7); }
+        .breadcrumb a { color: var(--primary); text-decoration: none; }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 40px;
+        }
+        .pagination a,
+        .pagination span {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .pagination a {
+            background: #f0f0f0;
+            color: var(--secondary);
+        }
+        .pagination a:hover {
+            background: var(--primary);
+            color: var(--secondary);
+        }
+        .pagination span {
+            background: var(--primary);
+            color: var(--secondary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="homepage.html" class="logo">
+                    <img src="https://namal.edu.pk/uploads/logo22869383.png" alt="Namal University">
+                    <span class="logo-text">Namal <span>University</span></span>
+                </a>
+                
+                <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+                
+                <ul class="nav-menu">
+                    <li><a href="homepage.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">About <i class="fas fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="chairman_message.html">Chairman's Message</a></li>
+                            <li><a href="vision_and_mission.html">Vision & Mission</a></li>
+                            <li><a href="core_values.html">Core Values</a></li>
+                            <li><a href="the_namal_story.html">The Namal Story</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Academics <i class="fas fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="department_of_computer_science.html">Computer Science</a></li>
+                            <li><a href="department_of_computer_electrical_engineering.html">Electrical Engineering</a></li>
+                            <li><a href="department_of_computer_electrical_business_studies.html">Business Studies</a></li>
+                            <li><a href="department_of_computer_electrical_maths.html">Mathematics</a></li>
+                            <li><a href="academic_calender.html">Academic Calendar</a></li>
+                            <li><a href="faculty.html">Faculty</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="admission.html" class="btn-cta">ADMISSIONS 2026</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Inner Page Header -->
+    <section class="inner-page-header">
+        <div class="container">
+            <h1 class="page-title">News</h1>
+            <div class="breadcrumb">
+                <a href="homepage.html">Home</a>
+                <span>/</span>
+                <span>News</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Latest News</h2>
+                <p>Stay updated with the latest happenings at Namal University</p>
+            </div>
+            
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="card-img-wrapper">
+                        <div class="card-date"><span>01</span>Apr</div>
+                        <img src="https://namal.edu.pk/uploads/eventAndNewsImg/front2614914.webp" alt="News" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Admissions Open Fall 2026</h3>
+                        <p class="card-text">Applications now being accepted for Fall 2026 intake.</p>
+                        <a href="#" class="card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="card-img-wrapper">
+                        <div class="card-date"><span>30</span>Mar</div>
+                        <img src="https://namal.edu.pk/uploads/eventAndNewsImg/front1115458.webp" alt="News" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Plantation Drive 2026</h3>
+                        <p class="card-text">A step towards sustainability with our annual plantation drive.</p>
+                        <a href="#" class="card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="card-img-wrapper">
+                        <div class="card-date"><span>17</span>Mar</div>
+                        <img src="https://namal.edu.pk/uploads/eventAndNewsImg/front683351.webp" alt="News" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Ehtram-e-Ramzan</h3>
+                        <p class="card-text">Embracing the spirit of Ramzan with special activities.</p>
+                        <a href="#" class="card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="card-img-wrapper">
+                        <div class="card-date"><span>15</span>Mar</div>
+                        <img src="https://namal.edu.pk/uploads/eventAndNewsImg/front8126836.webp" alt="News" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">NTS Entry Test</h3>
+                        <p class="card-text">NTS entry test conducted successfully at Namal campus.</p>
+                        <a href="#" class="card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="card-img-wrapper">
+                        <div class="card-date"><span>10</span>Mar</div>
+                        <img src="https://namal.edu.pk/uploads/eventAndNewsImg/front4654796.webp" alt="News" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">QEC Annual Review</h3>
+                        <p class="card-text">Quality Enhancement Cell conducts annual review of BS Electrical Engineering Program.</p>
+                        <a href="#" class="card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="card-img-wrapper">
+                        <div class="card-date"><span>05</span>Mar</div>
+                        <img src="https://namal.edu.pk/uploads/eventAndNewsImg/front6327212.webp" alt="News" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">International Guest Lecture</h3>
+                        <p class="card-text">Expert lecture on high-frequency design for engineering students.</p>
+                        <a href="#" class="card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="card-img-wrapper">
+                        <div class="card-date"><span>03</span>Mar</div>
+                        <img src="https://namal.edu.pk/uploads/eventAndNewsImg/front6783934.webp" alt="News" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">National Startup Pitch Event</h3>
+                        <p class="card-text">Namal CS Students secured 2nd Position in national competition.</p>
+                        <a href="#" class="card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="card-img-wrapper">
+                        <div class="card-date"><span>26</span>Feb</div>
+                        <img src="https://namal.edu.pk/uploads/eventAndNewsImg/front859427.webp" alt="News" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">NET Entrance Test</h3>
+                        <p class="card-text">Acceptable Entry Test for Namal Admissions 2026 - Series 3.</p>
+                        <a href="#" class="card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="card-img-wrapper">
+                        <div class="card-date"><span>19</span>Feb</div>
+                        <img src="https://namal.edu.pk/uploads/eventAndNewsImg/front8978004.webp" alt="News" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">NAT-III Entry Test</h3>
+                        <p class="card-text">Information about NAT-III (NTS) entry test acceptance.</p>
+                        <a href="#" class="card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="card-img-wrapper">
+                        <div class="card-date"><span>16</span>Feb</div>
+                        <img src="https://namal.edu.pk/uploads/eventAndNewsImg/front518059.webp" alt="News" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Interview & CV Preparation</h3>
+                        <p class="card-text">Session focused on interview skills and resume building.</p>
+                        <a href="#" class="card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="card-img-wrapper">
+                        <div class="card-date"><span>12</span>Feb</div>
+                        <img src="https://namal.edu.pk/uploads/eventAndNewsImg/front3997385.webp" alt="News" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Line Following Robot Challenge</h3>
+                        <p class="card-text">Students participated in line following robot competition.</p>
+                        <a href="#" class="card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="card-img-wrapper">
+                        <div class="card-date"><span>09</span>Feb</div>
+                        <img src="https://namal.edu.pk/uploads/eventAndNewsImg/front9679120.webp" alt="News" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">UET Lahore Entrance Test</h3>
+                        <p class="card-text">Details about UET Lahore entrance test acceptance.</p>
+                        <a href="#" class="card-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <span>1</span>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">&gt;</a>
+                <a href="#">Last &rsaquo;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="logo-text">Namal <span>University</span></div>
+                    <p>Namal University is committed to providing quality education that transforms students into innovative professionals and responsible citizens.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="academic_calender.html">Academic Calendar</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                        <li><a href="news.html">News & Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Departments</h4>
+                    <ul class="footer-links">
+                        <li><a href="department_of_computer_science.html">Computer Science</a></li>
+                        <li><a href="department_of_computer_electrical_engineering.html">Electrical Engineering</a></li>
+                        <li><a href="department_of_computer_electrical_business_studies.html">Business Studies</a></li>
+                        <li><a href="department_of_computer_electrical_maths.html">Mathematics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 30 km Talagang Road, Mianwali</li>
+                        <li><i class="fas fa-phone-alt"></i> +92(0)459-236995</li>
+                        <li><i class="fas fa-envelope"></i> info@namal.edu.pk</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Namal University. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
