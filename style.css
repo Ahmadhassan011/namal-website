@@ -10,46 +10,50 @@
 
 :root {
     /* =====================================================
-       CORE COLOR PALETTE
+       CORE COLOR PALETTE - Updated Color Scheme
        ===================================================== */
     
-    /* Primary - Forest Green (Growth & Nature) */
-    /* #027353 - Main brand color representing growth and prosperity */
-    --primary: #027353;
-    --primary-light: #3DD9A0;
-    --primary-dark: #015c40;
-    --primary-pale: #d1f5e8;
+    /* Primary Brand Green - Headers, primary buttons, hero overlays */
+    /* #004B33 - Main brand color */
+    --primary: #004B33;
+    --primary-light: #0A7951;
+    --primary-dark: #003324;
+    --primary-pale: #e6f0ed;
     
-    /* Secondary - Dark Teal (Trust & Stability) */
-    /* #073540 - Deep teal representing stability and professionalism */
-    --secondary: #073540;
-    --secondary-light: #0a4d5c;
-    --secondary-dark: #052a33;
+    /* Secondary Green - Program cards, icons, hover states */
+    /* #0A7951 - Secondary brand color */
+    --secondary: #0A7951;
+    --secondary-light: #129268;
+    --secondary-dark: #064d36;
     
-    /* Accent - Bright Mint (Freshness & Innovation) */
-    /* #3DD9A0 - Bright mint for modern, innovative feel */
-    --accent: #3DD9A0;
-    --accent-light: #5ee4b8;
-    --accent-pale: #d1f5ea;
+    /* Accent Mint - Call to Action buttons, highlights */
+    /* #27D397 - Bright mint accent */
+    --accent: #27D397;
+    --accent-light: #4de0ad;
+    --accent-pale: #d1f9eb;
     
-    /* Highlight - Peach (Warmth & Energy) */
-    /* #F2BF91 - Peach for call-to-action and highlights */
-    --highlight: #F2BF91;
-    --highlight-light: #f7d4b8;
-    --highlight-dark: #e6a572;
+    /* Deep Teal - Achievement sections, footers */
+    /* #072A2D - Sophisticated dark background */
+    --deep-teal: #072A2D;
+    --deep-teal-light: #0f3d40;
+    --deep-teal-dark: #041a1c;
     
-    /* Neutrals - Balanced Grays */
+    /* Soft White - Page backgrounds, section spacing */
+    /* #F4F7F6 - Clean, slightly cool neutral */
+    --soft-white: #F4F7F6;
+    --off-white: #f8faf9;
+    --light-gray: #e8eeed;
+    
+    /* Neutrals */
     --white: #ffffff;
-    --off-white: #f8fafc;
-    --light-gray: #f5f5f5;
-    --gray-100: #f2f2f2;
-    --gray-200: #e0e0e0;
-    --gray-300: #b0b0b0;
-    --gray-400: #808080;
-    --gray-500: #606060;
-    --gray-600: #404040;
-    --gray-700: #303030;
-    --gray-800: #1a1a1a;
+    --gray-100: #e8eeed;
+    --gray-200: #c5d1cd;
+    --gray-300: #a2b4ac;
+    --gray-400: #7f978b;
+    --gray-500: #5c7a6a;
+    --gray-600: #395c49;
+    --gray-700: #163d28;
+    --gray-800: #0f2d1c;
     --black: #000000;
     
     /* Semantic Colors */
